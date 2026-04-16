@@ -18,11 +18,14 @@ http://localhost:8000/docs
 POST /query
 
 {
+
   "query": "How can I reset my password?"
+  
 }
 
 # Example output
 {
+
   "answer": "...",
   
   "mode": "rag",
@@ -30,6 +33,7 @@ POST /query
   "latency": 0.3,
   
   "cached": false
+  
 }
 
 # How to run
