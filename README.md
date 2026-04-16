@@ -24,11 +24,15 @@ POST /query
 # Example output
 {
   "answer": "...",
+  
   "mode": "rag",
+  
   "latency": 0.3,
+  
   "cached": false
 }
 
 # How to run
 docker run -p 6333:6333 qdrant/qdrant
+
 uvicorn app.main:app --reload
