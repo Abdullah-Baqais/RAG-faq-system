@@ -35,6 +35,7 @@ POST /query
   
 }
 ```
+```json
 POST /feedback
 {
   "query": "...",
