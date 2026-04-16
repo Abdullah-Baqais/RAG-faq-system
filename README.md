@@ -14,16 +14,15 @@ User → FastAPI → Retrieval (Qdrant) → LLM → Response
 
 # API usage
 http://localhost:8000/docs
-
+```json
 POST /query
-
 {
-
   "query": "How can I reset my password?"
-  
 }
+```
 
 # Example output
+``` json
 {
 
   "answer": "...",
@@ -35,6 +34,26 @@ POST /query
   "cached": false
   
 }
+```
+POST /feedback
+{
+  "query": "...",
+  "rating": "good"
+}
+```
+GET /health
+
+## Example Response
+
+```json
+{
+  "answer": "To reset your password...",
+  "mode": "rag",
+  "latency": 0.32,
+  "cached": false
+}
+```
+
 
 # How to run
 docker run -p 6333:6333 qdrant/qdrant
