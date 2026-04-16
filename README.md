@@ -25,7 +25,11 @@ POST /feedback
   "query": "...",
   "rating": "good"
 }
+
 GET /health
+{
+  "status": "ok"
+}
 ```
 
 # Example output
@@ -40,19 +44,6 @@ GET /health
   
   "cached": false
   
-}
-```
-
-
-
-## Example Response
-
-```json
-{
-  "answer": "To reset your password...",
-  "mode": "rag",
-  "latency": 0.32,
-  "cached": false
 }
 ```
 
