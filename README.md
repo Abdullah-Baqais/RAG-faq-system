@@ -16,6 +16,7 @@ User → FastAPI → Retrieval (Qdrant) → LLM → Response
 http://localhost:8000/docs
 
 POST /query
+
 {
   "query": "How can I reset my password?"
 }
