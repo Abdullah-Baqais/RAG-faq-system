@@ -19,6 +19,13 @@ POST /query
 {
   "query": "How can I reset my password?"
 }
+
+POST /feedback
+{
+  "query": "...",
+  "rating": "good"
+}
+GET /health
 ```
 
 # Example output
@@ -35,14 +42,8 @@ POST /query
   
 }
 ```
-```json
-POST /feedback
-{
-  "query": "...",
-  "rating": "good"
-}
-```
-GET /health
+
+
 
 ## Example Response
 
