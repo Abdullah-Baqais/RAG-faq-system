@@ -5,7 +5,7 @@ A Retrieval-Augmented Generation (RAG) system for answering FAQ questions using 
 - Semantic search with Qdrant
 - Context-aware answers using Groq (LLaMA 3)
 - Fallback handling for unknown queries
-- Response caching (hash-based)
+- Response caching
 - Latency tracking
 - Feedback collection API
 
